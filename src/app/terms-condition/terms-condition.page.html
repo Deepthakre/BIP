@@ -1,0 +1,47 @@
+<ion-content style="--background: url('/assets/image/bg1.jpg') no-repeat center center / cover fixed;">
+          
+  <ion-label style="font-size: 17px;display: flex;justify-content: center;align-items: center;margin: auto;margin-top: 10px;"><b>Terms and Conditions</b></ion-label>
+  
+  <br>
+
+
+
+  <div style="width: 90%; margin: auto; font-size: 17px;">
+    <ion-text style="font-size: 17px;">
+      <ol style="width: 100%; margin: auto;margin-left: -10px;">
+        <li style="color: black;"> The phone number and the information provided for the sign-up  / registration process  belongs to applicant.
+</li><br>
+        <li style="color: black;"> The applicant is above 18 years of age and is competent to enter a binding business agreement with the platform.
+</li><br>
+        <li style="color: black;">The applicant submits that the information provided by the applicant during the process of  registration is true  and accurate.
+
+</li><br>
+        <li style="color: black;"> The applicant submits that he/she is getting registered in his/her individual  capacity only and  'NOT' as a director/ partner/ proprietor/ representative etc. of a PVT.LTD. Company / LLC / LLP / Partnership / Proprietorship Company etc.
+</li><br>
+<li style="color: black;"> The applicant is a citizen of India and holds a valid PAN, AADHAR and Bank Account. 
+</li><br>
+<li style="color: black;"> The applicant will abide with the articles / sections / elements of the agreement and code of conduct agreed during registration process; and will carry out his/her business on the platform with atmost good faith.
+</li><br>
+      </ol>
+    </ion-text><br><br>
+
+
+    <ion-row class="check">
+      <ion-col style="width: 90%;margin: auto;margin-left: 15px;margin-top: -40px;">
+        <ion-checkbox [(ngModel)]="isChecked" (ionChange)="handleCheckboxChange()" style="width: 90%;margin: auto;"></ion-checkbox>
+        <p style="margin-left: 30px;margin-top: -25px;font-size: 17px;color: black;">I have read and understood the terms and conditions</p> 
+      </ion-col>
+    </ion-row>
+
+    <!-- <ion-button [disabled]="!isChecked" (click)="submitForm()" style="width: 95%;margin: auto ;margin-bottom: 15px;text-transform: none;margin-left: 10px;" color="tertiary">Accept and Continue</ion-button> -->
+    <ion-button [disabled]="!isChecked" (click)="submitForm()" style="text-transform: none; margin: auto; width: 90%; margin-bottom: 15px;bottom: 10px; left: 5%; right: 5%;margin-top: -10px;" color="tertiary" expand="block">Accept and Continue</ion-button>
+  </div>
+
+ 
+
+</ion-content>
+<!-- <ion-button style="text-transform: none; margin: auto; width: 90%; margin-bottom: 10px; position: absolute; bottom: 15px; left: 5%; right: 5%;" color="tertiary" expand="block" routerLink="/login">Accept and Continue</ion-button>  -->
+<!-- <ion-footer>
+  <ion-button style="margin: auto;text-transform: capitalize;margin-bottom: 25px;width: 90%;" color="tertiary"
+    expand="block" routerLink="/bil-code">Accept and continue</ion-button>
+</ion-footer> -->

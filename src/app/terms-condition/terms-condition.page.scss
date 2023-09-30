@@ -1,0 +1,27 @@
+strong {
+  color: red;
+}
+
+p {
+  color: red;
+}
+
+ion-icon {
+  font-size: 160%;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+ion-content{
+  height: 110%;
+}
+@media only screen and (max-width: 915px) and (min-width: 412px) {
+  ion-button{
+ text-transform: none;
+  margin: auto;
+   width: 90%;
+   bottom: 15px;
+   margin-bottom: 10px;
+    left: 5%; right: 5%;
+    position: absolute;
+  }
+}

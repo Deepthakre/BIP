@@ -1,0 +1,134 @@
+<!-- <ion-header  class="ion-no-border">
+  <ion-toolbar>
+    <ion-button fill="clear" slot="start" color="dark" routerLink="/otp">
+      <ion-icon name="arrow-back"></ion-icon>
+
+    </ion-button>
+  </ion-toolbar>
+    
+ 
+   
+  
+</ion-header> -->
+
+<ion-content style="--background: url('/assets/image/bg1.jpg') no-repeat center center / cover fixed;" >
+  
+   
+  
+  <ion-icon style="margin: auto; font-size: 160%; margin-left: 20px;margin-top: 10px;" name="arrow-back" routerLink="/doc" class="icon"></ion-icon><p class="bill" style="margin-top: -25px;"><b>Business influence Leader (BIL)</b></p>
+  <ion-col>
+    <h6 style="width: 90%; margin: auto;font-size: 17px;">
+      Enter the promo code / Business Influencer Leader (BIL) code
+      <span>*</span>
+    </h6> 
+   
+      <!-- <ion-button style="width: 90%; margin: auto; margin-top:20px;text-transform: capitalize;" 
+         expand="block"
+      >Scan QR Code
+      </ion-button> -->
+       <br>
+      <ion-input lines="none"  placeholder="  Enter Code" type="text" style="width: 90%; margin: auto;">
+      </ion-input>
+  
+  </ion-col>
+  <br><br>
+<ion-row>
+<ion-col>
+ 
+<h6 style="width: 90%; margin: auto;font-size: 17px;">Your Aapsmein Relation with Business Influencer Leader (BIL)</h6>
+</ion-col>
+</ion-row>
+
+ <br>
+ <br>
+
+
+<ion-radio-group [(ngModel)]="selectedOption">
+
+<ion-grid style="width: 95%; margin: auto;">
+
+<ion-row>
+  
+  <ion-col size="4" size-sm="4">
+    <ion-card class="last1" (click)="handleCardClick('box1')">
+      <ion-card-header>
+        <ion-radio mode="md" value="box1" class="corner-radio"></ion-radio>
+      </ion-card-header>
+      <ion-card-content>
+        <img src="/assets/image/friends.png" class="t">
+        <p class="t2">Friend</p>
+      </ion-card-content>
+    </ion-card>
+  </ion-col> 
+  <ion-col size="4" size-sm="4">
+    <ion-card class="last2" (click)="handleCardClick('box2')">
+      <ion-card-header>
+        <ion-radio mode="md" value="box2" class="corner-radio"></ion-radio>
+      </ion-card-header>
+      <ion-card-content>
+         <img src="/assets/image/family.png" class="t">
+        <p class="t1">Relative</p>
+      </ion-card-content>
+    </ion-card>
+  </ion-col>
+  <ion-col size="4" size-sm="2">
+    <ion-card class="last3" (click)="handleCardClick('box3')">
+      <ion-card-header>
+        <ion-radio mode="md" value="box3" class="corner-radio"></ion-radio>
+      </ion-card-header>
+      <ion-card-content>
+        <img src="/assets/image/village.png">
+        <p>Neighbour</p> 
+      </ion-card-content>
+    </ion-card>
+  </ion-col>
+  <ion-col size="4" size-sm="2" style="margin-top: 8px;">
+    <ion-card class="last4" (click)="handleCardClick('box4')">
+      <ion-card-header>
+        <ion-radio mode="md" value="box4" class="corner-radio"></ion-radio>
+      </ion-card-header>
+      <ion-card-content>
+        <img src="/assets/image/teamwork.png">
+       <p>Collegue</p> 
+      </ion-card-content>
+    </ion-card>
+  </ion-col>
+  <ion-col size="4" size-sm="2" style="margin-top: 8px;">
+    <ion-card class="last5" (click)="handleCardClick('box5')">
+      
+      <ion-card-header>
+        <ion-radio  mode="md" value="box5" class="corner-radio"></ion-radio>
+      </ion-card-header>
+      <ion-card-content>
+        <img src="/assets/image/hand-shake.png">
+       <p>Newly met</p> 
+      </ion-card-content>
+    </ion-card>
+  </ion-col>
+  <ion-col size="4" size-sm="2" style="margin-top: 8px;">
+    <ion-card class="last6" (click)="handleCardClick('box6')">
+      <ion-card-header>
+        <ion-radio mode="md" value="box6" class="corner-radio"></ion-radio>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-icon name="business-outline"></ion-icon>
+       <p class="top">Business</p> 
+       <p class="top1">contact</p> 
+      </ion-card-content>
+    </ion-card>
+  </ion-col>
+</ion-row>
+</ion-grid> 
+</ion-radio-group>
+<ion-row>
+  <ion-col>
+    
+  </ion-col>
+</ion-row>
+<ion-button style="text-transform: none; margin: auto; width: 90%; margin-bottom: 10px; position: absolute; bottom: 15px; left: 5%; right: 5%;" color="tertiary" expand="block" routerLink="/basic-info">Accept and Continue</ion-button>
+</ion-content>
+<!-- <ion-footer>
+  <ion-button  style="width: 90%; margin: auto;text-transform: capitalize;margin-bottom: 25px;" color="tertiary" expand="block" routerLink="/basic-info"
+      >Accept And Continue</ion-button
+    >
+</ion-footer> -->

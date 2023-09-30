@@ -1,0 +1,42 @@
+<ion-content style="--background: url('/assets/image/bg1.jpg') no-repeat center center / cover fixed;">
+  <p style="margin: auto;width: 90%;text-align: center;margin-top: 10px;font-size:17px;"><b>My Leads</b></p><br>
+<ion-card *ngFor="let product of products" (click)="toggleProductDetails(product)" style=" border-top: 2px solid black;">
+  <!-- Product Box -->
+  <ion-card-content>
+    <ion-icon name="chevron-down-outline"></ion-icon>
+    <h3>{{ product.name }}</h3>&emsp;
+    <p>{{ product.description }} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+    <p style="margin-left: 160px;margin-top: -23px;"  [style.color]="product.color"><span style="color: gray;margin-left: -10px;">Status:</span> {{product.status}}</p>
+  </ion-card-content>
+
+  <!-- Product Details (Hidden by default) -->
+  <div *ngIf="selectedProduct === product" style="height: auto;width: auto;">
+    <ion-card-header style="height: auto;width: auto;margin-top: -10px;">
+   
+      <p style="font-size: 14px;">Fees: &nbsp;<b><span>&#8377;</span> 16759</b><br><br>
+        Name: &nbsp;<b>Mayur Deep</b><br><br>
+      mobile no: &nbsp;<b>999916759</b><br><br>
+      Location: &nbsp;<b>Nagpur</b><br><br>
+      PAN card: &nbsp;<b>QW ERT YUIO </b><br><br>
+      Addhar card: &nbsp;<b>1234 16759 2334</b><br><br>
+      Expected loan amount: &nbsp;<b><span>&#8377;</span> 16759</b></p><br>
+    </ion-card-header> 
+    <ion-card-content>
+     <ion-grid>
+      <ion-row>
+        <ion-col size="6">
+          <ion-button  style="margin: auto;margin-top:-40px;margin-left: -10px;" color="tertiary">Go To form</ion-button>
+        </ion-col>
+        <ion-col size="6">
+          <ion-button style="margin: auto;margin-top:-40px;" color="success">Track</ion-button>
+        </ion-col>
+      </ion-row>
+     </ion-grid>
+      <!-- <ion-button color="tertiary">Go To form</ion-button>
+      <ion-button color="success">Track</ion-button> -->
+    
+     
+    </ion-card-content>
+  </div>
+</ion-card>
+</ion-content>

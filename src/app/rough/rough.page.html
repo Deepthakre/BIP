@@ -1,0 +1,41 @@
+<ion-content style="--background: url('/assets/image/bg1.jpg') no-repeat center center / cover fixed;">
+  <p style="margin: auto;width: 90%;text-align: center;margin-top: 10px;font-size:17px;"><b>My Leads</b></p>
+<ion-card *ngFor="let product of products" (click)="toggleProductDetails(product)" style=" border-top: 3px solid black;">
+  <!-- Product Box -->
+  <ion-card-content>
+    <ion-icon name="chevron-down-outline" ></ion-icon>
+    <h3>{{ product.name }}</h3>
+    <p>{{ product.description }} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+    <p style="margin-left: 160px;margin-top: -20px;"  [style.color]="product.color"><span style="color: black;margin-left: -10px;">status</span> {{product.status}}</p>
+  </ion-card-content>
+
+  <!-- Product Details (Hidden by default) -->
+  <div *ngIf="selectedProduct === product" style="height: auto;width: auto;">
+    <ion-card-header style="height: auto;width: auto;margin-top: -10px;">
+   
+      <p>Fees:rs 16759<br>
+      mobile no:999916759<br>
+      Location:Nagpur<br>
+      PAN card:QWERTYUIO<br>
+      Addhar card:1234 16759 2334<br>
+      Expected loan amount:rs 16759</p>
+    </ion-card-header> 
+    <ion-card-content>
+     <ion-grid>
+      <ion-row>
+        <ion-col size="6">
+          <ion-button  style="margin: auto;margin-top:-40px;margin-left: -10px;" color="tertiary">Go To form</ion-button>
+        </ion-col>
+        <ion-col size="6">
+          <ion-button style="margin: auto;margin-top:-40px;" color="success">Track</ion-button>
+        </ion-col>
+      </ion-row>
+     </ion-grid>
+      <!-- <ion-button color="tertiary">Go To form</ion-button>
+      <ion-button color="success">Track</ion-button> -->
+    
+     
+    </ion-card-content>
+  </div>
+</ion-card>
+</ion-content>

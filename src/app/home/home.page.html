@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Card with Radio Button
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card (click)="selectCard()">
+    <ion-item>
+      <ion-label>Card Title</ion-label>
+      <ion-radio [checked]="radioChecked" (click)="selectRadioButton($event)"></ion-radio>
+    </ion-item>
+    <ion-card-content>
+      Card content goes here...
+    </ion-card-content>
+  </ion-card>
+</ion-content>

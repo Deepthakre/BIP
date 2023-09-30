@@ -1,0 +1,134 @@
+<ion-content class="ion-padding" style="--background: url('/assets/image/bg1.jpg') no-repeat center center / cover fixed;">
+  <ion-icon style="font-size: 160%;margin: auto;margin-left:7px;margin-top: 10px;" name="arrow-back" routerLink="/basic-info" class="icon">
+    
+  </ion-icon> <p style="width: 90%; margin: auto; text-align: center;margin-top: -25px;font-size: 17px;"><b>Applicant Address</b></p>
+  <form [formGroup]="permanentAddressForm" >
+  <ion-row>
+        <ion-col>
+          <h4>
+            <b> Permanent Address   <span>*</span></b>
+          </h4>
+          <h6 style="color: black;">Flat No./House No. <span>*</span></h6>
+          <!-- <ion-item> -->
+            <ion-input placeholder="  Flat No./House No." formControlName="flatNo" required type="dob"> </ion-input>
+          <!-- </ion-item> -->
+        </ion-col> 
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <h6>Street Name/building Name <span>*</span></h6>
+          <!-- <ion-item> -->
+            <ion-input
+            
+              placeholder="  Street Name/building Name" formControlName="streetName" required
+            ></ion-input>
+          <!-- </ion-item> -->
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <h6>Area <span>*</span></h6>
+          <!-- <ion-item> -->
+            <ion-input placeholder="  Area" formControlName="area" required type="text"> </ion-input>
+          <!-- </ion-item> -->
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <h6>City <span>*</span></h6>
+          <!-- <ion-item> -->
+            <ion-input placeholder="  City" formControlName="city" required type="text"> </ion-input>
+          <!-- </ion-item> -->
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <h6>State <span>*</span></h6>
+          <!-- <ion-item> -->
+            <ion-input placeholder="  State" formControlName="state" required type="text"> </ion-input>
+          <!-- </ion-item> -->
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <h6>PIN <span>*</span></h6>
+          <!-- <ion-item> -->
+            <ion-input placeholder="  PIN" formControlName="pin" required type="text"> </ion-input>
+          <!-- </ion-item> -->
+          <ion-row class="ion-margin-top">
+            <ion-col>
+              <ion-checkbox justify="start" formControlName="sameAsTemporaryAddress"></ion-checkbox>&nbsp;&nbsp;Same Address For
+              Communication
+            </ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+      </form>
+
+      <form [formGroup]="temporaryAddressForm">
+      <ion-row>
+        <ion-col>
+          <h4>
+            <b>Address for Communication <span>*</span></b>
+          </h4>
+          <h6>Flat No./House No. <span>*</span></h6>
+          <!-- <ion-item> -->
+            <ion-input placeholder="   Flat No./House No." formControlName="flatNo" required  type="text"> </ion-input>
+          <!-- </ion-item> -->
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <h6>Street Name/building Name <span>*</span></h6>
+          <!-- <ion-item> -->
+            <ion-input
+              
+              placeholder="  Street Name/building Name" formControlName="streetName" required
+            ></ion-input>
+          <!-- </ion-item> -->
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <h6>Area <span>*</span></h6>
+          <!-- <ion-item> -->
+            <ion-input placeholder="   Area" formControlName="area" required type="text"> </ion-input>
+          <!-- </ion-item> -->
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <h6>City <span>*</span></h6>
+          <!-- <ion-item> -->
+            <ion-input placeholder="   City" formControlName="city" required type="text"> </ion-input>
+          <!-- </ion-item> -->
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <h6>State <span>*</span></h6>
+          <!-- <ion-item> -->
+            <ion-input placeholder="  State" formControlName="state" required type="text"> </ion-input>
+          <!-- </ion-item> -->
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <h6>PIN <span>*</span></h6>
+          <!-- <ion-item> -->
+            <ion-input placeholder="   PIN" formControlName="pin" required type="text"> </ion-input>
+          <!-- </ion-item> -->
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-button style="text-transform: none;" color="tertiary" expand="block" routerLink="/bank-info"
+            >Accept and Continue</ion-button
+          >
+        </ion-col>
+      </ion-row>
+      </form>
+</ion-content>

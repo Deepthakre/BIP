@@ -1,0 +1,119 @@
+
+<ion-content style="--background: url('/assets/image/bg1.jpg') no-repeat center center / cover fixed;">
+  
+  <ion-card style="--background: url('/assets/image/bg1.jpg') no-repeat center center / cover fixed;">
+<h3 class="text-center" style="font-size: 17px;"><b>Profile</b></h3>
+    <ion-card-header>
+ <ion-segment value="all">
+    <ion-segment-button value="all"   >
+      <ion-label>Basic-Info</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="favorites">
+      <ion-label>Bank-Info</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+    </ion-card-header>
+    <ion-card-content>
+        <ion-row>
+          <ion-col>
+            <p>Names</p>
+            <h2 style="font-size: 140%;"><b>James Camroom</b></h2>
+          </ion-col>
+           
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <p>Mobile Number :</p>
+            <h2 style="color: black;"><b>9876543452</b></h2>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <p>Address Permenant :</p>
+            <h2><b>Wing-A 202 orchid business park,militry road
+              Andheri East,mumbai Maharashtra 4400059</b>
+            </h2>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <p>Address Communication :</p>
+            <h2><b>Wing-A 202 orchid business park,militry road
+              Andheri East,mumbai Maharashtra 4400059</b></h2>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <p>PAN</p>
+            <h2><b>OWERT1234Y</b></h2>
+          </ion-col>
+          <ion-col>
+            <p>Aadhar Card</p>
+            <h2><b>OWERT1234Y</b></h2>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-button color="tertiary" id="open-modale"  ><b>Reset Password</b></ion-button>
+              
+         
+          <ion-modal class="modal"
+            trigger="open-modale"
+            [initialBreakpoint]="0.80"
+            [breakpoints]="[0, 0.25, 0.5, 0.85]"
+            handleBehavior="cycle"
+          >
+            <ng-template>
+       
+              <!-- <ion-header> -->
+                <ion-toolbar>
+                  <!-- <ion-icon name="close-circle" class="icon"></ion-icon> -->
+                  <ion-title style="text-align: center;color: black;width: 95%;">Reset password</ion-title>
+                  <ion-buttons slot="start" color="tertiary" (click)="cancel()">
+                    <ion-button><ion-icon slot="start" color="tertiary" name="close-circle-outline" ></ion-icon></ion-button>
+                  </ion-buttons>
+                </ion-toolbar>
+              <!-- </ion-header> -->
+
+              <ion-content class="ion-padding">
+       
+        <!-- <p class="mleft"> Reset password</p> -->
+      <div class="reset">
+        <h6>Current Password <span>*</span></h6>
+        <ion-item>
+         
+            <ion-input placeholder="Current Password" type="text"   > </ion-input> 
+       
+        </ion-item>
+        <h6>New password <span>*</span></h6>
+        <ion-item>
+        
+            <ion-input placeholder="New password" type="text"   > </ion-input> 
+       
+        </ion-item>
+        <h6>Confirm New Password <span>*</span></h6>
+        <ion-item>
+          
+            <ion-input placeholder="Confirm New Password " type="text"   > </ion-input> 
+       
+        </ion-item>
+      </div>
+        
+        
+           <ion-button expand="full" class="btn"    (click)="submitOTP()" color="tertiary"  >Apply</ion-button>
+        
+      </ion-content>
+    </ng-template> 
+  </ion-modal>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-button color="success" routerLink="/login">LogOut</ion-button>
+          </ion-col>
+        </ion-row>
+    </ion-card-content>
+  </ion-card>
+
+ 
+</ion-content>

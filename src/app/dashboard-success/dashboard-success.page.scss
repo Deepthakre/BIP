@@ -1,0 +1,31 @@
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Make sure the content takes up the full viewport height */
+}
+
+.div {
+  background-color: rgb(3, 48, 114);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imgdiv {
+  justify-content: center;
+  margin-top: 20vh; /* Adjust as needed */
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+.success,
+.line,
+.next {
+  text-align: center;
+  color: green;
+  margin-top: 20px;
+}

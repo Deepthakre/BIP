@@ -1,0 +1,31 @@
+
+
+<ion-content style="--background: url('/assets/image/bg1.jpg') no-repeat center center / cover fixed;">
+ 
+  
+  <ion-icon style="font-size: 160%;margin: auto;margin-left: 10px;margin-top: 10px;" name="arrow-back" routerLink="/disclaimer" class="icon">
+    
+  </ion-icon> <p style="width: 90%; margin: auto; text-align: center;margin-top: -25px;font-size: 17px;"><b>Selfie</b></p>
+ 
+     
+  <ion-grid style="height: 80%; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+    <ion-row >
+      <ion-col size="12">
+        <div class="image-container">
+        <img [src]="capturedImage ? capturedImage : defaultImage" >
+       </div>
+      </ion-col>
+      
+    </ion-row>
+    <ion-row style="width: 100%;">
+      <ion-col>
+        <ion-button  class="btn" color="success" (click)="openCamera()">capture</ion-button>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+   <ion-button style="text-transform: none; margin: auto; width: 90%; margin-bottom: 10px; position: absolute; bottom: 15px; left: 5%; right: 5%;" color="tertiary" expand="block" routerLink="/agrement">Accept and Continue</ion-button>
+</ion-content>
+<!-- <ion-footer>
+  <ion-button  style="width: 90%; margin: auto; text-transform: capitalize;margin-bottom: 25px;" color="tertiary" expand="block" routerLink="/agrement">Accept and Continue</ion-button>
+</ion-footer> -->

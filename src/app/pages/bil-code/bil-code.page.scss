@@ -1,0 +1,147 @@
+ion-content{
+  margin: auto;
+  height: 100%;
+  width: 100%;
+}
+ion-radio.corner-radio {
+  position: absolute;
+  top: 0.1;
+  right: 0;
+  margin-right: 5px;
+  margin-top: -10px;
+   background-color: white;
+   border-radius: 50%;
+}
+ion-card{
+  border-radius: 10px;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+   
+.last1 ,.last2 ,.last3{
+  height: 100px;
+  width: 100px;
+}
+.last4 ,.last5,.last6{
+  height: 100px;
+  width: 100px;
+ 
+}
+.last1{
+  background-color: 	#efef84;
+  margin-right: 10px;
+}
+.last2{
+  background-color: #90EE90;
+}
+.last3{
+  background-color: #cc7dff;
+  margin-right: 10px;
+  ion-card-content{
+    margin-left:-1px;
+    word-wrap: normal;
+    text-align: center;
+  }
+}
+.last4{
+  background-color: #f2a8b3;
+  margin-right: 10px;
+  ion-card-content{
+    margin-left:-1px;
+    word-wrap: normal;
+    text-align: center;
+    margin-top: 0%;
+    
+  }
+}
+.last5{
+  
+  background-color: #4daccc;
+  ion-card-content{
+    margin-left:-1px;
+    word-wrap: normal;
+    text-align: center;
+  }
+}
+.last6{
+  background-color: #f01c09;
+  margin-right: 10px;
+  ion-card-content{
+    margin-left:-1px;
+    word-wrap: normal;
+    text-align: center;
+  }
+}
+
+ion-icon{
+  font-size: 30px;
+  margin-left: 10px;
+  margin-top: -10px;
+} 
+ion-card{
+
+  margin-top: 0%;
+  margin-left: 0%;
+  margin-right: 0%;
+  height:100%;
+  }
+  ion-grid{
+    margin-top: 12%;
+  }
+  
+  h4{
+    color: black;
+    font-weight: 400;
+
+  }
+  span{
+    color: red;
+  }
+  img{
+   height: 50%;
+   width: 50%;
+   text-align: center;
+ }
+ p{
+   color: black;
+ }
+ .bill{
+   margin: auto;
+   text-align: center;
+   font-size: 17px;
+   margin-top: -30px;
+ } 
+//  .icon{
+//   margin: auto;
+//   text-align: left;
+//   margin-top: 30px;
+//  }
+ .t{ 
+margin-left: 17px;
+
+ }
+ .t1{
+   margin-left: 8px; 
+ }
+ .t3{
+   color: black;
+ }
+ .t2{
+  margin-left:12px ;
+ }
+ ion-input{
+  background-color: rgb(244, 243, 243);
+  border-radius: 10px;
+} 
+ion-icon{
+  color: black;
+  margin-left: -10px;
+  // margin-top: 1px;
+}
+.top{
+  margin-top: 5px;
+}
+.top1{
+  margin-top: -10px;
+}

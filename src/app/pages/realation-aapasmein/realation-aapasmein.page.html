@@ -1,0 +1,105 @@
+
+
+ <ion-content style="--background: url('/assets/image/bg1.jpg') no-repeat center center / cover fixed;">
+  
+   
+  
+  <ion-icon name="arrow-back" routerLink="/loans" class="icon"></ion-icon>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <h6 style="width: 95%; margin: auto;margin-top: -20px;margin-left: 20px;font-size: 17px;">Whats your Relation with the Refaral</h6>
+      </ion-col>
+    </ion-row>
+    </ion-grid>
+
+<ion-radio-group [(ngModel)]="selectedOption">
+
+<ion-grid style="width: 90%; margin: auto;padding: auto;">
+
+<ion-row>
+  
+  <ion-col size="4" size-sm="4">
+    <ion-card class="last1" (click)="handleCardClick('box1')">
+      <ion-card-header>
+        <ion-radio mode="md" value="box1" class="corner-radio" #radioButton ></ion-radio>
+      </ion-card-header>
+      <ion-card-content>
+        <img src="/assets/image/friends.png" class="t">
+        <p class="t1">friend</p>
+      </ion-card-content>
+    </ion-card>
+  </ion-col>
+  <ion-col size="4" size-sm="4">
+    <ion-card class="last2" (click)="handleCardClick('box2')">
+      <ion-card-header>
+        <ion-radio mode="md" value="box2" class="corner-radio"></ion-radio>
+      </ion-card-header>
+      <ion-card-content>
+         <img src="/assets/image/family.png" class="t">
+        <p class="t1">Relative</p>
+      </ion-card-content>
+    </ion-card>
+  </ion-col>
+  <ion-col size="4" size-sm="2">
+    <ion-card class="last3" (click)="handleCardClick('box3')"> 
+      <ion-card-header>
+        <ion-radio mode="md" value="box3" class="corner-radio"></ion-radio>
+      </ion-card-header>
+      <ion-card-content>
+        <img src="/assets/image/village.png">
+        <p>Neighbour</p> 
+      </ion-card-content>
+    </ion-card>
+  </ion-col>
+  <ion-col size="4" size-sm="2">
+    <ion-card class="last4" (click)="handleCardClick('box4')">
+      <ion-card-header>
+        <ion-radio mode="md" value="box4" class="corner-radio"></ion-radio>
+      </ion-card-header>
+      <ion-card-content>
+        <img src="/assets/image/teamwork.png">
+       <p>collegue</p> 
+      </ion-card-content>
+    </ion-card>
+  </ion-col>
+  <ion-col size="4" size-sm="2">
+    <ion-card class="last5" (click)="handleCardClick('box5')">
+      
+      <ion-card-header>
+        <ion-radio  mode="md" value="box5" class="corner-radio"></ion-radio>
+      </ion-card-header>
+      <ion-card-content>
+        <img src="/assets/image/hand-shake.png">
+       <p>Newlymet</p> 
+      </ion-card-content>
+    </ion-card>
+  </ion-col>
+  <ion-col size="4" size-sm="2">
+    <ion-card class="last6" (click)="handleCardClick('box6')">
+      <ion-card-header>
+        <ion-radio mode="md" value="box6" class="corner-radio"></ion-radio>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-icon name="business-outline"></ion-icon>
+       <p class="top">Business</p> 
+       <p class="top1">contact</p> 
+      </ion-card-content>
+    </ion-card>
+  </ion-col>
+</ion-row>
+</ion-grid> 
+</ion-radio-group>
+<ion-row>
+  <ion-col>
+   
+  </ion-col>
+</ion-row>
+<ion-button style="text-transform: none; margin: auto; width: 90%; margin-bottom: 10px; position: absolute; bottom: 15px; left: 5%; right: 5%;" color="tertiary" expand="block" routerLink="/new-ref-form">Accept and Continue</ion-button>
+
+</ion-content>
+<!-- <ion-footer>
+  <ion-button style="width: 90%; margin: auto;text-transform: capitalize;margin-bottom: 25px; " color="tertiary" expand="block" routerLink="/new-ref-form"
+  >Accept and Continue</ion-button
+>
+</ion-footer> -->

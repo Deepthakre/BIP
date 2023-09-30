@@ -1,0 +1,51 @@
+
+// .otp-container {
+//   margin-top: -250px;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   height: 100%;
+// }
+.grid{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+.otp-input {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  margin-top:-1rem;
+
+  input { 
+    width: 3rem;
+    height: 3rem;
+    font-size: 2rem;
+    text-align: center;
+    border: 1px solid gray;
+    border-radius: 0.5rem;
+    margin: 0 0.5rem ;
+    margin-bottom: -10rem;
+   
+  }
+}
+img{
+  size: 40px;
+  height: 25%;
+  margin-top: 1px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wel{
+  margin-left: 140px;
+  font-size: 15px;
+}
+ion-icon{
+  margin-top: 10px;
+  font-size: 20px;
+}

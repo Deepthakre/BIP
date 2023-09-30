@@ -1,0 +1,7 @@
+{
+  "name": "DynamicVishva",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

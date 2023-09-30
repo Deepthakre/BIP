@@ -1,0 +1,105 @@
+
+
+<ion-content style="--background: url('/assets/image/bg1.jpg') no-repeat center center / cover fixed;">
+  <h3 class="text-center" style="font-size: 17px;"><b>Loans</b></h3>
+<br>
+
+  <!-- <ion-item> 
+    <ion-icon name="funnel-outline"   id="open-modall"></ion-icon>Filter
+  </ion-item> -->
+
+  <!-- <ion-grid>
+    <ion-row style="display: flex;justify-content: flex-end;align-items: center;margin-right: 23px;margin-top:-15px;" >
+        <ion-icon  name="funnel-outline"  id="open-modall" ></ion-icon>
+        <p style="margin-top:13px;color: darkblue;">Filter</p>
+    </ion-row>
+  </ion-grid> -->
+
+
+
+  <ion-modal   trigger="open-modall" [isOpen]="isModalOpen"
+  [initialBreakpoint]="0.80"
+  [breakpoints]="[0, 0.80, 0.5, 0.85]"
+  handleBehavior="cycle">
+    <ng-template>
+      <ion-header>
+        <ion-toolbar>
+          <!-- <ion-icon name="close-circle" class="icon"></ion-icon> -->
+         
+          <ion-buttons slot="end" color="tertiary">
+            <ion-button style="text-transform: capitalize;">Reset</ion-button>
+          </ion-buttons>
+          <ion-title style="text-align: center;color: black;">Filter</ion-title>
+          <ion-buttons slot="start" color="tertiary" (click)="cancel()" >
+            <ion-button><ion-icon slot="start" name="close-circle-outline"  ></ion-icon></ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content>
+      
+        <ion-item>
+          <ion-label class="ion-text-wrap" for="terms">Loans</ion-label>
+          <ion-checkbox id="terms"   [checked]="canDismiss"></ion-checkbox>
+          
+        </ion-item>
+        <ion-item>
+          <ion-label class="ion-text-wrap" for="terms">Car Finance loan</ion-label>
+          <ion-checkbox id="terms"   [checked]="canDismiss"></ion-checkbox>
+          
+        </ion-item>
+        <ion-item>
+          <ion-label class="ion-text-wrap" for="terms">Holyday</ion-label>
+          <ion-checkbox id="terms"   [checked]="canDismiss"></ion-checkbox>
+          
+        </ion-item>
+        <ion-item>
+          <ion-label class="ion-text-wrap" for="terms">Youngstar</ion-label>
+          <ion-checkbox id="terms"   [checked]="canDismiss"></ion-checkbox>
+          
+        </ion-item>
+        <ion-item>
+          <ion-label class="ion-text-wrap" for="terms">Arogya Sanjivani</ion-label>
+          <ion-checkbox id="terms"   [checked]="canDismiss"></ion-checkbox>
+          
+        </ion-item>
+        <ion-item>
+          <ion-label class="ion-text-wrap" for="terms">Super Surplus</ion-label>
+          <ion-checkbox id="terms"   [checked]="canDismiss"></ion-checkbox>
+          
+        </ion-item>
+        <ion-item>
+          <ion-label class="ion-text-wrap" for="terms">Sen. cit. Red Carpet</ion-label>
+          <ion-checkbox id="terms"   [checked]="canDismiss"></ion-checkbox>
+        
+        </ion-item>
+        <ion-item>
+          <ion-label class="ion-text-wrap" for="terms">Medi-clasic</ion-label>
+          <ion-checkbox id="terms"   [checked]="canDismiss"></ion-checkbox>
+          
+        </ion-item>
+        
+           <ion-button expand="full" style="text-transform: capitalize;margin: auto;margin-top: 10px;width: 90%;"  color="tertiary" (click)="submitOTP()" routerLink="/Product-info">Apply</ion-button>
+        
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+
+  <ion-grid style="margin-top:-30px;">
+ <ion-row>
+  <ion-col>
+    <ion-card *ngFor="let item of items" routerLink="/realation-aapasmein">
+   
+      <!-- Card content -->
+      <ion-card-content>
+       <img [src]="item.images"> 
+   
+  
+        <!-- Display your item properties here -->
+        <h2 style="color: black;"><b>{{item.title}}</b></h2>
+        <p>{{item.description}}</p>
+      </ion-card-content>
+    </ion-card>
+  </ion-col>
+ </ion-row>
+</ion-grid>
+</ion-content>
